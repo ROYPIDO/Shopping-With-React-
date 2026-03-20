@@ -49,7 +49,6 @@ export const routes = createBrowserRouter(
 				},
 			],
 		},
-	],
-	{ basename: "/Shopping-With-React-" }
-);
+	]
+	);
 
