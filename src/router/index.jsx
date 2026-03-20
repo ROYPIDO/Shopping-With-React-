@@ -9,43 +9,47 @@ import Recap6Page from "../pages/recap6-page";
 import Recap7Page from "../pages/recap7-page";
 import RootLayout from "../layouts/root-layout";
 
-export const routes = createBrowserRouter([
-	{
-		path: "/",
-		element: <RootLayout />,
-		children: [
-			{
-				index: true,
-				element: <Homepage />,
-			},
-			{
-				path: "page1",
-				element: <Recap1Page />,
-			},
-			{
-				path: "page2",
-				element: <Recap2Page />,
-			},
-			{
-				path: "page3",
-				element: <Recap3Page />,
-			},
-			{
-				path: "page4",
-				element: <Recap4Page />,
-			},
-			{
-				path: "page5",
-				element: <Recap5Page />,
-			},
-			{
-				path: "page6",
-				element: <Recap6Page />,
-			},
-			{
-				path: "page7",
-				element: <Recap7Page />,
-			},
-		],
-	},
-]);
+export const routes = createBrowserRouter(
+	[
+		{
+			path: "/",
+			element: <RootLayout />,
+			children: [
+				{
+					index: true,
+					element: <Homepage />,
+				},
+				{
+					path: "page1",
+					element: <Recap1Page />,
+				},
+				{
+					path: "page2",
+					element: <Recap2Page />,
+				},
+				{
+					path: "page3",
+					element: <Recap3Page />,
+				},
+				{
+					path: "page4",
+					element: <Recap4Page />,
+				},
+				{
+					path: "page5",
+					element: <Recap5Page />,
+				},
+				{
+					path: "page6",
+					element: <Recap6Page />,
+				},
+				{
+					path: "page7",
+					element: <Recap7Page />,
+				},
+			],
+		},
+	],
+	{ basename: "/Shopping-With-React-" }
+);
+
