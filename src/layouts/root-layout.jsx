@@ -6,12 +6,13 @@ import { Container } from "react-bootstrap";
 
 const RootLayout = () => {
 	return (
-		<div className=" vh-100 d-flex flex-column justify-content-between">
+		<div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
 			<Header />
-			<Container className=" flex-grow-1">
-				<Outlet />
-			</Container>
-
+			<main style={{ flex: 1 }}>
+				<Container>
+					<Outlet />
+				</Container>
+			</main>
 			<Footer />
 		</div>
 	);

@@ -3,9 +3,9 @@ import { Button } from "react-bootstrap";
 
 const Recap3Child = ({ setMessage }) => {
 	return (
-		<div>
-			<Button onClick={() => setMessage("Hello")}>Click me</Button>
-		</div>
+		<Button onClick={() => setMessage("Hello from Child! 🙌")}>
+			Fire callback →
+		</Button>
 	);
 };
 
